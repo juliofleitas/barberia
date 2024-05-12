@@ -3,6 +3,168 @@
 <html lang="es">
 
 <head>
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>El Bigote de Ned Flanders</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--  seccion header navbar -->
+    <nav class="navbar">
+      <span>El bigote de Ned Flanders</span>
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Información</a></li>
+        <li><a href="">Galería</a></li>
+        <li><a href="">Reserva</a></li>
+      </ul>
+    </nav>
+    <header><img id="banner" src="images/diferencial01.jpg" alt="banner" /></header>
+
+    <div class="main-container">
+      <!-- seccion información -->
+      <h1>El Bigote de Ned Flanders: Tu Barbería de Confianza</h1>
+
+      <p>
+        Expertos en Barba y Cabello. Estilo y CaAlidad en el Corazón de la
+        Ciudad.
+      </p>
+
+      <p>
+        ¿Cansado de la misma barbería de siempre?
+        <em><strong> El Bigote de Ned Flanders</strong></em> te ofrece una
+        experiencia única:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Estilistas expertos en barba y cabello:</strong> Te asesoramos
+          para encontrar el look perfecto para ti.
+        </li>
+
+        <li>
+          <strong>Las últimas tendencias:</strong> Siempre actualizados con las
+          últimas técnicas y estilos.
+        </li>
+
+        <li>
+          <strong>Atención personalizada:</strong> Un servicio de primera con un
+          ambiente cálido y acogedor.
+        </li>
+
+        <li>
+          <strong>Productos de alta calidad:</strong> Cuidamos tu cabello y
+          barba con las mejores marcas.
+        </li>
+      </ul>
+
+      <p><strong>¿Por qué elegirnos?</strong></p>
+
+      <ul>
+        <li>
+          <strong>Más que una barbería:</strong> Somos un espacio donde te
+          sentirás como en casa.
+        </li>
+
+        <li>
+          <strong>Resultados garantizados:</strong> Clientes satisfechos que
+          vuelven una y otra vez.
+        </li>
+
+        <li>
+          <strong>Precios competitivos:</strong> La mejor relación
+          calidad-precio del mercado.
+        </li>
+      </ul>
+
+      <p>
+        <strong
+          >Reserva tu cita hoy mismo y descubre la diferencia El Bigote de Ned
+          Flanders.</strong
+        >
+      </p>
+
+      <p>
+        <strong>Llama ahora al 0800-888-bigote o reserva turno en: LINK</strong>
+      </p>
+
+      <img
+        class="imagenDiferenciales"
+        src="images/2019-min.jpg"
+        alt="diferenciales de la barbería"
+      />
+
+      <!--  seccion header Servicios -->
+     
+      <ul class="Servicios">
+        <li>
+            <h2>Cabello</h2>
+            <img src="images/cabello.jpg" alt="">
+        </li>
+
+        <li>
+            <h2>Barba</h2>
+            <img src="images/barba.jpg" alt="">
+        </li>
+        
+        <li>
+            <h2>Cabello + Barba</h2>
+            <img src="images/cabello+barba.jpg" alt="">
+        </li>
+
+
+      </ul>
+
+      <!-- formulario contacto/reserva -->
+
+      <section class="Turnos">
+        <h2>Reserva tu turno</h2>
+
+        <form action="">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required />
+
+          <label for="telefono">Telefono</label>
+          <input type="tel" required />
+
+          <label for="date">Dia</label>
+          <input type="date" name="dia" id="dia" required />
+
+          <label for="hora">Hora</label>
+          <input type="time" name="hora" id="hora" required />
+
+          <label for="servicio"></label>
+          <select name="servicio" id="servicio" required>
+            <option value="Cabello">Cabello</option>
+            <option value="Barba">Barba</option>
+            <option value="Cabello y Barba">Cabello y Barba</option>
+          </select>
+
+          <div class="contenedorcheck">
+            <input type="checkbox" id="recordar" name="recordar">
+            <label for="recordar" id="labelcheck">Recordar Turno</label>
+          </div>
+            
+
+          <button type="submit">Reservar Turno</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
 
     <meta charset="UTF-8">
 
