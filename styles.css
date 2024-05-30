@@ -21,6 +21,12 @@ body {
       font-size: 1.6rem;
       font-weight: bold;
     }
+    .abrir-menu{
+      display: none;
+    }
+    .cerrar-menu{
+      display: none;
+    }
 
     ul {
       list-style: none;
@@ -121,7 +127,7 @@ body {
         display: inline-block;
       }
       
-      .grilla{
+      .grilla{ 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-auto-rows: 250px;
@@ -266,3 +272,167 @@ h2 {
   margin-bottom: 20px;
 }
 
+
+@media (max-width: 768px) {
+
+    body{
+        .navbar {
+        padding: 20px 60px 20px 120px;
+        flex-direction: column;
+
+          ul {
+          gap: 15px;
+          flex-direction: row;
+          margin-top: 3px;
+        }
+      }
+
+      .logo {
+       left: -17px;
+      width: 150px;
+      }
+    }
+    
+  
+    
+  
+    .main-container {
+      padding: 0 20px;
+    }
+    
+    #precios ul {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .container{
+      flex-direction: row;
+
+      form{
+        width: 50%;
+      }
+
+      .turnos-image {
+        width: 50%;
+      }
+    }
+
+    .turnos-image {
+      border-left: none;
+      margin-top: 20px;
+      padding-top: 20px;
+      width: 50%;
+
+      img{
+        margin-top: 50px;
+      }
+    } 
+  }
+  
+  @media (max-width: 480px) {
+
+    body{
+      .navbar {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        align-items: center;
+        
+        span{
+          font-size: 1.2rem;
+          text-align: center;
+        }
+
+        .abrir-menu,.cerrar-menu{
+          display: block;
+          border: 0;
+          font-size: 1.25rem;
+          background-color: transparent;
+        }
+
+        .abrir-menu{
+          color: #fff;
+          margin-left: auto
+        }
+
+        .menu{
+          opacity: 0;
+          visibility: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          gap: 1rem;
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background-color: orange;
+          padding: 2rem;
+          box-shadow: rgba(0, 0, 0, .5);
+          ul{
+            flex-direction: column;
+            align-items: end;
+            a{
+              color: black;
+            }
+          }
+        }
+
+        .menu.visible{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      .logo {
+        top: -8px;
+        left: -1px;
+        width: 120px;
+      }
+
+      header img {
+        height: 40vh;
+      }
+
+      .main-container{
+        h1 {
+         font-size: 1.8rem;
+        }
+        #precios {
+          span {
+            font-size: 1.2rem;
+          }
+        }
+        #galeria .grilla {
+          grid-auto-rows: auto;
+          grid-auto-flow: row;
+          grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        } 
+
+        #turnos{
+          .container{
+            flex-direction: column;
+
+            form{
+              width: 100%;
+            }
+
+            .turnos-image{
+              border-top: 2px solid orange;
+              border-left: none;
+              width: 100%;
+
+              img{
+                height: auto;
+              }
+            }
+          }
+
+        }
+      } 
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }

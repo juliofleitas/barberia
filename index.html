@@ -8,6 +8,8 @@
 
     <title>El Bigote de Ned Flanders</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,17 +23,22 @@
     <!--  seccion header navbar -->
     <nav class="navbar">
       <span>El bigote de Ned Flanders</span>
-      <ul>
-        <li><a href="#info">Información</a></li>
-        <li><a href="#precios">Precios</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#turnos">Reserva</a></li>
-      </ul>
+      <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+      <div class="menu" id="menu">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></i></button>
+        <ul>
+          <li><a href="#info">Información</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#turnos">Reserva</a></li>
+          </ul>
+      </div>
+      
     </nav>
     <img src="images/logo2.png" class="logo" alt="logo">
     <header><img src="images/diferencial01.jpg" alt="banner" /></header>
 
-    <div class="main-container">
+    <main class="main-container">
       <h1>El Bigote de Ned Flanders: Tu Barbería de Confianza</h1>
 
       <!-- seccion información -->
@@ -184,14 +191,14 @@
           <label for="recordar" id="labelcheck">Recordar Turno</label>
         </div> -->
 
-            <button type="submit">Reservar Turno</button>
+            <button type="submit" id="reservar">Reservar Turno</button>
           </form>
           <div class="turnos-image">
             <img src="images/2019-min.jpg" alt="" />
           </div>
         </div>
       </section>
-    </div>
+    </main>
 
     <script src="scripts.js"></script>
   </body>
